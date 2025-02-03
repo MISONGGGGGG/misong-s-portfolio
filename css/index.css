@@ -49,6 +49,22 @@ html,body{
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'PlayfairDisplay';
+    font-weight: normal;
+    src: url('../mylittlegoods_site/font/PlayfairDisplay-MediumItalic.ttf');
+}
+@font-face {
+    font-family: 'lora';
+    font-weight: normal;
+    src: url('../mylittlegoods_site/font/Lora-BoldItalic.ttf');
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('../mylittlegoods_site/font/Pretendard-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
 .grid_wrap,.fix_gear{
     height: 100vh;
 }

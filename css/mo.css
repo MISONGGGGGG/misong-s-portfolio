@@ -116,6 +116,7 @@
     background: black;
     position: fixed;
     z-index: 10000;
+    /* display: none; */
 }
 .main_gif{
     width: 180%;
@@ -129,7 +130,7 @@
     position: absolute;
     bottom: 35%;
     left: 50%;
-    font-family: 'Maven Pro', sans-serif;
+    font-family: 'PlayfairDisplay';
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,7 +147,8 @@
     text-align: center;
     display: none;
     cursor: pointer;
-    font-family: 'GmarketSansMedium';
+    font-family: 'Pretendard-Regular';
+    font-weight: 700;
 }
 /* 메인페이지 끝 */
 
