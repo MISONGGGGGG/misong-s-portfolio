@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./mo.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arsenal&family=Barlow+Semi+Condensed:wght@500&family=Hind:wght@600&family=M+PLUS+Rounded+1c&family=Nanum+Myeongjo:wght@400;800&family=Noto+Sans+Duployan&family=Noto+Sans+Mongolian&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arsenal&family=Bai+Jamjuree&family=Barlow+Semi+Condensed:wght@500&family=Hind:wght@600&family=M+PLUS+Rounded+1c&family=Nanum+Myeongjo:wght@400;800&family=Noto+Sans+Duployan&family=Noto+Sans+Mongolian&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arsenal&family=Bai+Jamjuree&family=Barlow+Semi+Condensed:wght@500&family=Hind:wght@600&family=M+PLUS+Rounded+1c&family=Nanum+Myeongjo:wght@400;800&family=Noto+Sans+Duployan&family=Noto+Sans+Mongolian&family=Open+Sans:wght@400;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 파일, 이미지 이름 영어로
+    이미지 폴더 이름 img
+    클래스, 이미지 이름 안겹치게
+    본인 파트별 시작과 끝에 내용, 이름적고 주석처리 (html, css 둘다)
+    박스 단위 -> %
+    나머지 -> em 
+
+3조
+- 로고 h1 태그 삽입 ㅇㅇ
+- 닫히는 태그 확인  ㅇㅇ
+- 이미지 삽입 alt 확인 ㅇㅇ
+- 두번째 페이지 내용 연결 레이아웃 
+- 사용자가 알수 있는 기능(마우스 이벤트)
+- 이미지 크기 확인
+- 단독태그 / 빼기 ㅇㅇ -->
+
+    <main>
+            <!-- 헤더시작 - 김미송 -->
+            <header>
+                <h1 class="main_logo">
+                    <a href="#">
+                        <img src="./img/main_logo.png"  alt="로고" >
+                    </a>
+                </h1>
+                <!-- pc_header -->
+                <nav class="main_menu">
+                    <ul class="menu_wrap">
+                        <li class="top_menu">
+                            CLOTHING
+                            <div class="sub_menu_wrap">
+                                <div class="sub_menu">SPORT COATS & TAILORING</div>
+                                <div class="sub_menu">COATS & OUTERWEAR</div>
+                                <div class="sub_menu">CASUAL & SHIRT JACKETS</div>
+                                <div class="sub_menu">KNITWEAR & SWEATERS</div>
+                                <div class="sub_menu">SHIRTS</div>
+                                <div class="sub_menu">PANTS</div>
+                                <div class="sub_menu">SHORTS</div>
+                                <div class="sub_menu">SKIRTS</div>
+                                <div class="sub_menu">T-SHIRTS & POLOS</div>
+                                <div class="sub_menu">SWEATS</div>
+                            </div>
+                        </li>
+                        <li class="top_menu">
+                            BAGS & LEATHER
+                            <div class="sub_menu_wrap">
+                                <div class="sub_menu">ANIMAL ICON BAGS</div>
+                                <div class="sub_menu">BRIEFCASES & TOTES</div>
+                                <div class="sub_menu">CROSSBODY BAGS</div>
+                                <div class="sub_menu">BACKPACKS</div>
+                                <div class="sub_menu">WALLETS & CARDHOLDERS</div>
+                                <div class="sub_menu">POUCHES & BELTS</div>
+                                <div class="sub_menu">TRAVEL & LUGGAGE</div>
+                            </div>
+                        </li>
+                        <li class="top_menu">
+                            ACCESSORIES
+                            <div class="sub_menu_wrap">
+                                <div class="sub_menu">EYEWEAR</div>
+                                <div class="sub_menu">FRAGRANCE</div>
+                                <div class="sub_menu">TIES & TIE BARS</div>
+                                <div class="sub_menu">HATS</div>
+                                <div class="sub_menu">SCARVES & GLOVES</div>
+                                <div class="sub_menu">SOCKS & UNDERWEAR</div>
+                                <div class="sub_menu">NOVELTY ACCESSORIES</div>
+                            </div>
+                        </li>                      
+                        <li class="top_menu">
+                            SHOES
+                            <div class="sub_menu_wrap">
+                                <div class="sub_menu">BROGUES & LOAFERS</div>
+                                <div class="sub_menu">SNEAKERS</div>
+                                <div class="sub_menu">BOOTS</div>
+                                <div class="sub_menu">SANDALS</div>                                                      
+                                </div>
+                        </li>
+                        <li class="top_menu">
+                            DISCOVER
+                            <div class="sub_menu_wrap">
+                                <div class="sub_menu">SERVICES</div>
+                                <div class="sub_menu">JOURNAL</div>
+                                <div class="sub_menu">COLLECTION</div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="search_box">
+                    <img src="./img/search_icon.png" class="search_icon" alt="돋보기">
+                </div>
+                <!-- mo-header -->
+                <input type="checkbox" id="ch_but">
+                <label for="ch_but" class="la_but">
+                    <img src="./img/hamburger.png" alt="햄버거" class="ham">
+                </label>
+                <div class="search_icon2">
+                    <img src="./img/search_icon.png" alt="돋보기">
+                </div>
+                <div class="ch_con">
+                    <nav class="tap_menu">
+                        <ul class=>
+                            <li class="tap_top_menu">
+                                CLOTHING
+                                <div class="tap_sub_menu_wrap">
+                                    <div class="tap_sub_menu">SPORT COATS & TAILORING</div>
+                                    <div class="tap_sub_menu">COATS & OUTERWEAR</div>
+                                    <div class="tap_sub_menu">CASUAL & SHIRT JACKETS</div>
+                                    <div class="tap_sub_menu">KNITWEAR & SWEATERS</div>
+                                    <div class="tap_sub_menu">SHIRTS</div>
+                                    <div class="tap_sub_menu">PANTS</div>
+                                    <div class="tap_sub_menu">SHORTS</div>
+                                    <div class="tap_sub_menu">SKIRTS</div>
+                                    <div class="tap_sub_menu">T-SHIRTS & POLOS</div>
+                                    <div class="tap_sub_menu">SWEATS</div>
+                                </div>
+                            </li>
+                            <li class="tap_top_menu">
+                                BAGS & LEATHER
+                                <div class="tap_sub_menu_wrap">
+                                    <div class="tap_sub_menu">ANIMAL ICON BAGS</div>
+                                    <div class="tap_sub_menu">BRIEFCASES & TOTES</div>
+                                    <div class="tap_sub_menu">CROSSBODY BAGS</div>
+                                    <div class="tap_sub_menu">BACKPACKS</div>
+                                    <div class="tap_sub_menu">WALLETS & CARDHOLDERS</div>
+                                    <div class="tap_sub_menu">POUCHES & BELTS</div>
+                                    <div class="tap_sub_menu">TRAVEL & LUGGAGE</div>
+                                </div>
+                            </li>
+                            <li class="tap_top_menu">
+                                ACCESSORIES
+                                <div class="tap_sub_menu_wrap">
+                                    <div class="tap_sub_menu">EYEWEAR</div>
+                                    <div class="tap_sub_menu">FRAGRANCE</div>
+                                    <div class="tap_sub_menu">TIES & TIE BARS</div>
+                                    <div class="tap_sub_menu">HATS</div>
+                                    <div class="tap_sub_menu">SCARVES & GLOVES</div>
+                                    <div class="tap_sub_menu">SOCKS & UNDERWEAR</div>
+                                    <div class="tap_sub_menu">NOVELTY ACCESSORIES</div>
+                                </div>
+                            </li>                      
+                            <li class="tap_top_menu">
+                                SHOES
+                                <div class="tap_sub_menu_wrap">
+                                    <div class="tap_sub_menu">BROGUES & LOAFERS</div>
+                                    <div class="tap_sub_menu">SNEAKERS</div>
+                                    <div class="tap_sub_menu">BOOTS</div>
+                                    <div class="tap_sub_menu">SANDALS</div>                                                      
+                                    </div>
+                            </li>
+                            <li class="tap_top_menu">
+                                DISCOVER
+                                <div class="tap_sub_menu_wrap">
+                                    <div class="tap_sub_menu">SERVICES</div>
+                                    <div class="tap_sub_menu">JOURNAL</div>
+                                    <div class="tap_sub_menu">COLLECTION</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <!-- 헤더 끝 - 김미송 -->
+            <!-- 메인페이지 시작 - 김미송 -->
+            <div class="page">
+                <div class="banner_text bottom_text">
+                    <p class="l_1">LOOK 1</p>
+                    <P class="l_2">LOOK 2</P>
+                    <p class="l_3">LOOK 3</p>
+                    <p class="l_4">LOOK 4</p>
+                </div>
+                <div class="main_img_box">
+                    <div class="main_img mm_1">
+                        <img src="./img/main_1.jpg"  alt="메인사진" >
+                    </div>
+                    <div class="main_img mm_2">
+                        <img src="./img/main_2.jpg"  alt="메인사진">
+                    </div>
+                    <div class="main_img mm_3">
+                        <img src="./img/main_3.jpg"  alt="메인사진">
+                    </div>
+                    <div class="main_img mm_4">
+                        <img src="./img/main_4.jpg"  alt="메인사진">
+                    </div>
+                </div>
+                <div class="banner_text top_text">
+                    <h2 class="new">New</h2>
+                    <h2 class="col">Collection</h2>
+                    <p class="num">2024 s/s</p>
+                </div>              
+            </div>
+            <!-- 메인페이지 끝 - 김미송 -->
+            <!-- 2페이지 시작 - 박선영 -->
+            <div class="out_box_2">
+                <ul class="page_2_mo_wrap">
+                    <li class="page_2_mo">
+                        <img src="./img/shoes_1.jpg" alt="모바일이미지">
+                    </li>
+                    <li class="page_2_mo">
+                        <img src="./img/bag_1.jpg" alt="모바일이미지">
+                    </li>
+                </ul>
+                <div class="left_box">
+                    <!-- <img src="./img/shoes_1.jpg" alt="신발"> -->
+                </div>
+                <div class="right_box">
+                    <div class="right_in_box">
+                        <div class="rb_1 rb_box"></div>
+                        <div class="rb_2 rb_box"></div>
+                        <div class="rb_3 rb_box"></div>
+                        <div class="rb_4 rb_box"></div>
+                        <div class="rb_5 rb_box"></div>
+                        <div class="right_box_text">
+                            <ul class="shadoww">
+                                <img src="./img/text_img_1.png" alt="그림자" class="shadow_text">
+                            <li class="product_name">
+                                PEBBLE GRAIN LEATHER <br>
+                                LONGWING BROGUE
+                            </li>
+                            </ul>
+                            <p class="product_text">
+                                Classic longwing brogue in grey pebble grain leather with black <br>
+                                lightweight rubber sole. Lace up closure, allover broguing perforation. <br>
+                                Signature striped grosgrain loop tabs at heels. <br>
+                            </p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            <!-- 2페이지 끝 - 박선영 -->
+
+
+
+            <!-- 3페이지 시작 - 박선영 -->
+            <div class="out_box_3">
+                 <!-- <div class="more_box"> 
+                     <a href="https://www.samsung.com/sec/explore/samsung-within/brand/thom-browne-edition/">
+                     <h4 class="mb_text">MORE</h4></a>
+                 </div> -->
+                 <img src="./img/mo_page_main.jpg" alt="톰브라운에디션" class="tom_img">
+                 <img src="./img/samsung_1.jpg" class="img_1">
+                 <img src="./img/samsung_2.jpg" class="img_2">
+             
+             </div>
+            <!-- 3페이지 끝 - 박선영 -->
+
+
+
+            <!-- 잡지? 시작 - 박재형 -->
+            <div class="maga">
+                <div class="magazine">
+                    <img src="./img/text_img_2.png" class="sha_text" alt="그림자">
+                <div class="ma_text_box">
+                    <h5 class="ma_title">MADE TO MEASURE</h5>
+                    <p class="ma_text">Every Mens and Womens made-to-measure suit is</p>
+                    <p class="ma_text">fully canvased by hand and proportioned to your frame.</p>
+                    <p class="ma_text">From appointment to final fitting,</p>
+                    <p class="ma_text">in 6-8 weeks.</p>
+                </div>
+                    <img src="./img/thom_logo_3.png" alt="로고" class="logo_3">
+                </div>
+
+                <div class="ma_img">
+                    <img src="./img/page_4_img.jpg" alt="잡지">
+                </div>
+            </div>
+            <!-- 잡지? 끝 - 박재형 -->
+
+            <!-- 사진슬라이드 시작 - 박재형 -->
+                <div class="slider">
+                    <div class="slide1 ss">
+                        <embed type="video/webm" src="https://www.youtube.com/embed/u2lzL3Qt5xw?controls=0&autoplay=1&mute=1" width="100%" height="100%">
+                    </div>
+                    <div class="slide2 ss">
+                        <embed type="video/webm" src="https://www.youtube.com/embed/QkJ9PykY8Q8?controls=0&autoplay=1&mute=1" width="100%" height="100%">
+                    </div>
+                    <div class="slide3 ss">
+                        <embed type="video/webm" src="https://www.youtube.com/embed/BKPFUeGHlN4?controls=0&autoplay=1&mute=1" width="100%" height="100%">
+                    </div>
+                    <div class="slide4 ss">
+                        <embed type="video/webm" src="https://www.youtube.com/embed/U96rCdDxLYg?controls=0&autoplay=1&mute=1" width="100%" height="100%">
+                    </div>
+                </div>
+            <!-- 사진슬라이드 끝 - 박재형 -->
+
+            <!-- 푸터 시작 - 박재형 -->
+            <footer>
+                <div class="pu">
+                    <span>·Privacy policy ·Unsubss</span>
+                </div>
+                <div class="foo_content">
+                    <div class="foo">
+                        <div class="help">
+                            <p class="head">Do you need help?</p>
+                            <div class="faq">
+                                <p>FAQs & Contact Information</p>
+                                <p>Track your order</p>
+                                <p>Guest retrun</p>
+                                <p>Cookie preferences</p>
+                                <p>Digital receipt</p>
+                            </div>
+                        </div>
+                    <div class="us">
+                            <p class="head">Us</p>
+                            <div class="faq">
+                                <p>Find a store</p>
+                                <p>Company</p>
+                                <p>Work with us</p>
+                                <p>Press Room</p>
+                            </div>
+                     </div>
+                    <div class="pay">
+                            <p class="head">Payment methods</p>
+                            <div class="faq">
+                                <p>Visa</p>
+                                <p>American Express</p>
+                                <p>Credit Card</p>
+                                <p>Gift card</p>
+                                <p>IN card</p>
+                            </div>
+                    </div>
+                    <div class="card">
+                            <p class="head">Payment methods</p>
+                            <div class="faq">
+                                <p>Mastercard</p>
+                                <p>Paypal</p>
+                                <p>Visa Electron</p>
+                                <p>Cash in delivery</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pu">
+                    <span>2023 thom browne ·Terms & Conditions · Cookies ·Privacy policy · Unsubscribe from newsletter · Legal Mentions <span>
+                </div>
+            </footer>
+            <!-- 푸터 끝 - 박재형 -->
+    </main>
+</body>
+</html>

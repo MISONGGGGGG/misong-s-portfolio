@@ -1,0 +1,307 @@
+@media all and (max-width: 1179px){
+  main {
+    width:100%;
+    overflow: hidden;
+  }  
+
+  header{
+        width: 100%;
+        height: 45px;
+        background-color: rgba(68, 67, 67,0.8);
+        position: fixed;
+        padding: 5px 20px;
+        z-index: 9999;
+        box-sizing: border-box;
+    }
+    .main_logo{
+        width: 90px;
+        height: 35px;
+        float: left;
+        /* margin-left: 20px; */
+    }
+    .search_box{
+      display: none;
+      /* width: 5%;
+      height: 5%;
+      margin-right: 50px;
+      border: 3.5px solid white;
+      border-radius: 10px;
+      float: right; */
+    }
+    .search_icon2{
+      display: block;
+      width: 30px;
+      height: 30px;
+      float: right;
+    }
+    .menu_wrap{
+        display: none;
+    }
+    #ch_but{
+      display: none;
+    }
+    .la_but{
+      display: block;
+      width: 25px;
+      height: 25px;
+      float: right;
+      cursor: pointer;
+      margin-top: 2.5px;
+      margin-left: 3px;
+      /* margin-right: 20px; */
+    }
+    .ch_con{
+      width: 100%;
+      height: 0;
+      background-color: rgba(255, 255, 255,0.7);
+      text-align: center;
+      line-height: 800px;
+      /* display: none; */
+      position: fixed;
+      top:5vw;
+      right:-100%;
+      transition-duration: 0.5s;
+    }
+    .tap_top_menu{
+        font-size: 20px;
+        line-height: 50px;
+        text-align: center;
+        color: white;
+        background-color: rgba(68, 67, 67,0.8);
+        cursor: pointer;
+    }
+    .tap_sub_menu_wrap{
+      width: 100%;
+      height: 0;
+      background-color: rgba(255, 255, 255,0.7);
+      overflow: hidden;
+      /* transition-duration: 1s; */
+    }
+    .tap_sub_menu{
+      width: 100%;
+      height: 3vw;
+      font-size: 10px;
+      line-height: 20px;
+      color: #333;
+      cursor: pointer;
+      overflow: hidden;
+    }
+    #ch_but:checked~.ch_con{
+      /* display: block; */
+      right:0;
+    }
+    .tap_top_menu:hover .tap_sub_menu_wrap{
+      height: 100%;
+    }
+    .tap_sub_menu:hover{
+      font-weight: 700;
+      }
+        /* 헤더 끝 */
+    
+        /* 메인 시작 */
+    .page{
+      width: 100%;
+      height: 100%;
+      margin-bottom: 5vw;
+    }  
+
+        /* .main_img img{
+          width: 100%;
+          height: 100%;
+          float: left;
+          margin-bottom: 10px;
+      } */
+
+      .mm_1, .mm_3, .mm_4 {
+        display: none;
+      } 
+
+      .bottom_text {
+        display: none;
+      }     
+      .top_text {
+          font-size: 10.5vw;
+          position: absolute;
+          color: white;
+          top: 180vw;
+          left: 40vw;
+          font-family: 'Playfair Display', serif;
+      }
+    
+      .new{
+          top: 1em;
+          font-size: 8vw;
+          position: absolute;
+          left: 5.5em;
+      }
+      .col{
+          top: 2em;
+          font-size: 8vw;
+          position: absolute;
+          left: 2.8em;
+      }
+      .num{
+          font-size: 3.5vw;
+          position: absolute;
+          left: 42vw;
+          top: 24vw;
+          width: 200px;
+      }
+      .bottom_text{
+          font-size: 3vw;
+          position: absolute;
+          top: 35vw;
+          right: 18vw;
+          text-align: end;
+          font-family: 'Open Sans', sans-serif;
+      }
+      .l_1:hover~.main_img{
+        filter: grayscale(100%);
+      }
+        /* 메인 끝 */
+    
+        /* 2페이지 시작*/
+        .out_box_2 {
+          width: 100%;
+          height: 40vw;
+          margin-bottom: 5vw;
+        }
+        .page_2_mo_wrap {
+          width: 100%;
+          height: 100%;
+          animation: slider 20s infinite linear;
+          animation-name: slider;
+          animation-direction: normal;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .page_2_mo {
+          width: 50%;
+          height: 100%;
+          background-size: cover;
+          margin-right: 10px;
+        }
+        .left_box {
+            display: none;
+        }
+        .right_box {
+            display: none;
+        }
+        
+        /* 2페이지 끝 */
+        
+          /* 3페이지 시작*/
+          .out_box_3{
+            width: 100%;
+            height: 100%;
+            margin-bottom: 5vw;
+          }
+          .tom_img {
+            width: 100%;
+            height: 100%;
+          }
+          .img_1 {
+            display: none;
+          }
+          .img_2{
+            display: none;
+          }
+      /* 3페이지 끝*/
+    
+    
+        /* 잡지 시작 - 박재형 */
+        .maga {
+            display: none;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .magazine {
+            font-size: 1.5em;
+            margin-right: 2em;
+            text-align: end;
+            color: black;
+        }
+        
+        .magazine h1 {
+            font-size: 2em;
+            margin-bottom: 1.5em;
+            text-align: end;
+            text-shadow: 0.5em 0.5em 0 lightgrey;
+        }
+    
+        h5 {
+          font-size: 1.5em;
+        }
+        
+        /* 잡지 끝 - 박재형 */
+        
+        
+        /* 사진슬라이드 시작 - 박재형 */
+        .slider {
+            width: 100%;
+            height: 40vw;
+            animation: slider 20s infinite linear;
+            animation-name: slider;
+            animation-direction: normal;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .ss {
+            width: 50%;
+            height: 100%;
+            background-size: cover;
+            margin-right: 10px;
+          }
+    
+        .ss:last-child {
+            margin-right: 0;
+        }
+        .slide3{
+            display: none;
+        }
+        .slide4{
+          display: none;
+        }
+          /* 사진슬라이드 끝 - 박재형 */
+    
+          /* 푸터 시작 */
+          footer {
+            width: 100%;
+            height: 28vw;
+            display: flex;
+            flex-direction: column;
+            /* margin-bottom: 10px; */
+            color: black;
+          }
+    
+          .foo {
+            display: flex;
+            justify-content: space-evenly;
+            line-height: 2em;
+          }
+    
+          .pu {
+            display: flex;
+            justify-content: center;
+            margin: 50px 0 30px 0;
+            text-align: center;
+          }
+    
+          .faq {
+            display: flex;
+            flex-direction: column;
+          }
+    
+          .head {
+            font-size: 1.5em;
+            font-weight: 800;
+          }
+    
+          /* 푸터 끝 */
+        }
