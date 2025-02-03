@@ -1,0 +1,162 @@
+$(document).ready(function(){
+
+let ww=$(window).width();
+box();
+
+$(window).resize(function(){
+    box();
+})
+
+function box(){
+    ww=$(window).width();
+    wh=ww*0.56;
+
+    $(".wrap").css({
+        width:ww,
+        height:wh*5
+    })
+    $("section").css({
+        width:ww,
+        height:wh,
+    })
+    $(".sunjung_2,footer").css({
+        width:ww,
+        height:wh*0.5
+    })
+    $(".product_section").css({
+        width:"100%",
+        height:"50%"
+    })
+    $(".main_banner").css({
+        width:ww/3,
+        height:"100%"
+    })
+    $("h2").css({
+        width:"100%",
+        height:"15%",
+        fontSize:ww*0.078,
+        position:"absolute",
+        bottom:ww*0.1,
+    })
+    $("h3").css({
+        width:ww*0.3,
+        height:ww*0.05,
+        fontSize:ww*0.026,
+        lineHeight:ww*0.05+"px"
+    })
+    $(".product_wrap").css({
+        width:ww,
+        height:ww*0.2
+    })
+    $(".product").css({
+        width:ww*0.15,
+        height:ww*0.2
+    })
+    $(".product_img").css({
+        width:ww*0.15,
+        height:ww*0.15
+    })
+    $(".product_info").css({
+        width:ww*0.15,
+        height:ww*0.05
+    })
+    $(".product_info p").css({
+        width:"100%",
+        height:"50%",
+        fontSize:ww*0.009,
+        lineHeight:ww*0.025+"px"
+    })
+    $(".soonjung_le").css({
+        width:"44%",
+        height:"100%"
+    })
+    $(".soonjung_ri").css({
+        width:"56%",
+        height:"100%",
+        left:ww*0.44
+    })
+    $(".soon_title").css({
+        width:"25%",
+        height:"10%",
+    })
+    $(".soon_title p").css({
+        display:"block",
+        width:"27%",
+        height:"20%",
+        fontSize:ww*0.008,
+        position: "absolute",
+        top: 0,
+        right:0
+    })
+    $("h4").css({
+        width:"90%",
+        height:"80%",
+        fontSize:ww*0.035,
+        position: "absolute",
+        top: "15%",
+        right:0
+    })
+    $(".makeup_view").css({
+        width:ww*0.25,
+        height:ww*0.1
+    })
+    $(".makeup_p_1").css({
+        fontSize:ww*0.012
+    })
+    $(".makeup_p_2").css({
+        fontSize:ww*0.017
+    })
+    $(".makeup_p_3").css({
+        width:ww*0.075,
+        height:ww*0.022,
+        fontSize:ww*0.01,
+        textAlign:"center",
+        lineHeight:ww*0.022+"px"
+    })
+    $(".p_club_1").css({
+        width:ww*0.13,
+        height:ww*0.015,
+        fontSize:ww*0.008
+    })
+    $("h5").css({
+        width:ww*0.5,
+        height:ww*0.07,
+        fontSize:ww*0.06,
+        lineHeight:ww*0.07+"px",
+    })
+    $(".h5_2").css({
+        width:ww*0.185
+    })
+    $(".makeup_p_4").css({
+        width:ww*0.07,
+        height:ww*0.015,
+        fontSize:ww*0.008
+    })
+    $("footer").css({
+        padding:ww*0.026,
+        boxSizing:"border-box",
+        fontSize:ww*0.008
+    })
+    $(".con_2 li").css({
+        width:"100%",
+        height:ww*0.1,
+    })
+    $(".content").css({
+        fontSize:ww*0.012,
+        textAlign:"center"
+    })
+    $(".con_3").css({
+        fontSize:ww*0.007,
+    })
+}
+$(window).scroll(function(){
+    st=$(this).scrollTop();
+    page_h=$(".main_page").height();
+    if(st>page_h){
+        $("header").addClass("on");
+    }
+    else if(st<=page_h){
+        $("header").removeClass("on");
+    }
+})
+})
