@@ -7,7 +7,9 @@ $(document).ready(function(){
     else{
         m_box();
     }
+    
     $(window).resize(function(){
+        let ww=$(window).width();
         box();
         if(ww>=1280){
             box();
@@ -16,11 +18,18 @@ $(document).ready(function(){
             m_box();
         }
     })
+
+    
+
+
     function box(){
         ww=$(window).width();
         wh=ww*0.52
 
         // 부모 사이즈
+        $(".wrap, .page_wrap, .about_page_wrap").css({ 
+            overflow: "visible" 
+        });
         $(".wrap").css({
             width:ww,
             height:wh*14.3
@@ -515,7 +524,7 @@ $(document).ready(function(){
     
 
 
-        // 스크롤 이벤트 시작꾸
+        // 스크롤 이벤트 시작
         $(window).scroll(function(){
             // pc,mo 스크롤 이벤트 공통 영역
             // 프로젝트 페이지 톱니 z축 회전
@@ -552,7 +561,7 @@ $(document).ready(function(){
             if(ww>=1280){
                 // 프로젝트 페이지 슬라이드
                 if(i>=page_h){
-                    if(i>=page_h && i<page_h+99){
+                    if(i >= page_h && i < page_h+99){
                         $(window).scrollTop(page_h)
                     }
                     $(".move_box").css({
@@ -816,6 +825,9 @@ $(document).ready(function(){
             $(".project").eq(3).click(function(){
                 $(".project_detail_wrap").eq(3).fadeIn(1000);
             })
+            $(".project").eq(4).click(function(){
+                $(".project_detail_wrap").eq(4).fadeIn(1000);
+            })
             $(".close").click(function(){
                 $(".project_detail_wrap").fadeOut(1000);
             })
@@ -832,6 +844,9 @@ $(document).ready(function(){
             })
             $(".ver_swiper_slide img").eq(3).click(function(){
                 $(".project_detail_wrap").eq(3).fadeIn(1000);
+            })
+            $(".ver_swiper_slide img").eq(4).click(function(){
+                $(".project_detail_wrap").eq(4).fadeIn(1000);
             })
 
 
@@ -1018,42 +1033,74 @@ $(document).ready(function(){
             })
         
         // 소개페이지 mo.ver 끝
-        const h_swiper=document.querySelector(".ho_swiper_slide");
-        const swiper = new Swiper('.ho_swiper', {
-            spaceBetween: -100,
-            direction: 'horizontal',
-            loop: true,
-            grabCursor:true,
-            slidesPerView:"auto",
-            centeredSlides:true,
-            effect:"coverflow", 
-            coverflowEffect:{
-            stretch:-100,
-            depth:400,
-            modifier:1,
-            slideShadows:false
-            },
-            autoplay:{
-              delete:1000,
-              disableOnInteraction:true
-            }
-          });
 
-        const swiper_2 = new Swiper('.ver_swiper', {
-            spaceBetween: -150,
-            direction: 'vertical',
-            loop: true,
-            grabCursor:true,
-            slidesPerView:"auto",
-            centeredSlides:true,
-            effect:"coverflow", 
-            coverflowEffect:{
-            rotate:-20, 
-            stretch:-100,
-            depth:1000,
-            modifier:1,
-            slideShadows:false
+
+    function updateSwiper() {
+        let ww = $(window).width();
+
+        if (ww >= 1280) {
+            // ✅ PC 모드에서는 Swiper 삭제 & 숨김
+            if (swiper) {
+                swiper.destroy(true, true);
+                swiper = null;
             }
-        });
+            if (swiper_2) {
+                swiper_2.destroy(true, true);
+                swiper_2 = null;
+            }
+            $(".ho_swiper, .ver_swiper").hide(); // Swiper 요소 숨김
+        } else {
+            // ✅ 모바일 모드에서는 Swiper 다시 생성 & 표시
+            $(".ho_swiper, .ver_swiper").show();
+            if (!swiper) {
+                swiper = new Swiper('.ho_swiper', {
+                    spaceBetween: -100,
+                    direction: 'horizontal',
+                    loop: true,
+                    grabCursor: true,
+                    slidesPerView: "auto",
+                    centeredSlides: true,
+                    effect: "coverflow",
+                    coverflowEffect: {
+                        stretch: -100,
+                        depth: 400,
+                        modifier: 1,
+                        slideShadows: false
+                    },
+                    autoplay: {
+                        delay: 1000,
+                        disableOnInteraction: true
+                    }
+                });
+            }
+            if (!swiper_2) {
+                swiper_2 = new Swiper('.ver_swiper', {
+                    spaceBetween: -150,
+                    direction: 'vertical',
+                    loop: true,
+                    grabCursor: true,
+                    slidesPerView: "auto",
+                    centeredSlides: true,
+                    effect: "coverflow",
+                    coverflowEffect: {
+                        rotate: -20,
+                        stretch: -100,
+                        depth: 1000,
+                        modifier: 1,
+                        slideShadows: false
+                    }
+                });
+            }
+        }
+    }
+
+    let swiper = null;
+    let swiper_2 = null;
+
+    updateSwiper();
+
+    $(window).on("resize", function () {
+        updateSwiper();
+    });
         
 })
