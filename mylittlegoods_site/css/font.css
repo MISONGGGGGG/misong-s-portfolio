@@ -2,74 +2,17 @@
 
 /* 노토산스 */
 
-@font-face {
-    font-family: 'NotoSansKR';
-	font-weight: 100;
-    src: url('../font/NotoSansKR-Thin.woff') format('woff');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'NotoSansKR';
-	font-weight: 200;
-    src: url('../font/NotoSansKR-ExtraLight.woff') format('woff');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'NotoSansKR';
-	font-weight: 300;
-    src: url('../font/NotoSansKR-Light.woff') format('woff');
-    font-style: normal;
-}
 
 @font-face {
 	font-family: 'NotoSansKR';
-	font-weight: 400;
 	src:  url('../font/NotoSansKR-Regular.woff') format('woff');
 	font-style: normal;
 }
 
-@font-face {
-	font-family: 'NotoSansKR';
-	font-weight: 500;
-	src:  url('../font/NotoSansKR-Medium.woff') format('woff');
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'NotoSansKR';
-	font-weight: 600;
-	src:  url('../font/NotoSansKR-SemiBold.woff') format('woff');
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'NotoSansKR';
-	font-weight: 700;
-	src:  url('../font/NotoSansKR-Bold.woff') format('woff');
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'NotoSansKR';
-	font-weight: 800;
-	src:  url('../font/NotoSansKR-ExtraBold.woff') format('woff');
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'NotoSansKR';
-	font-weight: 900;
-	src:  url('../font/NotoSansKR-Black.woff') format('woff');
-	font-style: normal;
-}
-
-
 /* 프리텐다드 */
 @font-face {
     font-family: 'Pretendard-Regular';
-    src: url('../font/Pretendard-Regular.ttf');
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
@@ -100,7 +43,7 @@
 /* 지마켓산스 */
 @font-face {
     font-family: 'GmarketSansMedium';
-    src: url('../font/GmarketSansTTFMedium.ttf');
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -131,10 +74,11 @@
 /* 조선궁서 */
 @font-face {
     font-family: 'ChosunGs';
-    src: url('../font/ChosunGs.TTF');
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGs.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
 
 /* 나눔손글씨 */
 @font-face {
@@ -146,7 +90,7 @@
 /* 잉크립퀴드체 */
 @font-face {
     font-family: 'InkLipquid';
-    src: url('../font/InkLipquid.ttf');
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -162,7 +106,7 @@
 /* 고딕아니고 고딩 */
 @font-face {
     font-family: 'Gothic_Goding';
-    src: url('../font/Gothic_Goding.ttf');
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/naverfont_05@1.0/Gothic_Goding.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -170,7 +114,7 @@
 /* 밑미 */
 @font-face {
     font-family: 'Ownglyph_meetme-Rg';
-    src: url('../font/Ownglyph_meetme-Rg.ttf');
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/Ownglyph_meetme-Rg.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -205,7 +149,7 @@
     src: url('../font/continuous.ttf');
 }
 
-/* 대충 내 손글씨 */
+/* 내 손글씨 */
 @font-face {
     font-family: 'Uiyeun';
     src: url('../font/Uiyeun.ttf');
