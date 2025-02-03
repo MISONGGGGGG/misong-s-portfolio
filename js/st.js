@@ -72,13 +72,13 @@ $(document).ready(function(){
         $(".title").css({
             width:ww*0.5,
             height:ww*0.1,
-            fontSize:ww*0.036
+            fontSize:ww*0.048
         })
        
         $(".start").css({
             width:ww*0.078,
             height:ww*0.026,
-            fontSize:ww*0.012,
+            fontSize:ww*0.015,
             lineHeight:ww*0.026+'px',
             marginLeft:-ww*0.039,
             borderRadius: ww*0.078,
@@ -309,14 +309,14 @@ $(document).ready(function(){
         $(".title").css({
             width:ww,
             height:ww*0.2,//75
-            fontSize:ww*0.1,//37.5
+            fontSize:ww*0.11,//37.5
             marginLeft:-ww*0.5,
         })
         // title_h=$(".title").height();
         $(".start").css({
             width:ww*0.25,
             height:ww*0.1,
-            fontSize:ww*0.04,
+            fontSize:ww*0.05,
             lineHeight:ww*0.1+'px',
             marginLeft:-ww*0.125,
             borderRadius: ww*0.1,
@@ -509,13 +509,13 @@ $(document).ready(function(){
             height:wh*0.1,
         })
         $(".ani_text").css({
-            width:ww*5,
+            width:ww*8,
             height:'100%',
             fontSize:wh*0.1,
             lineHeight: wh*0.1+'px',
         })
         $(".yellow_box").css({
-            width: ww*5,
+            width: ww*8,
             height:'100%',
             backgroundColor: 'rgb(252, 240, 0)'
         })
