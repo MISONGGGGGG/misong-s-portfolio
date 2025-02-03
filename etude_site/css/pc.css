@@ -1,0 +1,310 @@
+@media all and (min-width:1280px){
+
+
+.wrap{
+    position: relative;
+}
+section{
+    position: sticky;
+}
+header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+.logo{
+    width: 130px;
+    height: 50px;
+}
+.main_menu{
+    width: 1000px;
+    height: 20px;
+}
+.top_menu_wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.search_box{
+    width: 250px;
+    height: 35px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.search{
+    width: 200px;
+    height: 100%;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+    outline: none;
+}
+.search_icon{
+    width: 20px;
+    height: 22px;
+    cursor: pointer;
+}
+.on{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.main_page{
+    position: relative;
+    display: flex;
+}
+.main_banner img{
+    display: block;
+    object-fit: cover;
+}
+h2{
+    text-align: center;
+    text-shadow: -2px -2px 0 rgb(0, 255, 242), 2px -2px 0 red, -2px 2px 0 red, 2px 2px 0 red;
+}
+.product_page{
+    background-image: url(../img/background.jpg);
+}
+h3{
+    margin-left: 50px;
+}
+.product_wrap{
+    display: flex;
+    justify-content: space-evenly;
+}
+.product_info p{
+    display: block;
+    text-align: center;
+    font-weight: 500;
+}
+.product_info p:nth-child(2){
+    /* font-weight: 700; */
+    color: #666666;
+}
+.soonjung_1{
+    position: relative;
+}
+.soonjung_le{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.soonjung_ri{
+    position: absolute;
+    top: 0;
+}
+.soonjung_le img{
+    object-fit: cover;
+}
+.soon_title{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-family: 'Cafe24Ssurround';
+    text-shadow: 1px 1px 1px #b8b8b8, -1px -1px 0 #b8b8b8,1px -1px 0 #b8b8b8, -1px -1px 0 #b8b8b8;
+}
+.sunjung_2{
+    background-image: url(../img/soonjung_product2.jpg);
+}
+.soonjung_pro{
+    font-family: 'Cafe24Ssurround';
+    color: white;
+    text-shadow: -1px -1px 0 #b8b8b8, 1px -1px 0 #b8b8b8,-1px -1px 0 #b8b8b8, 1px -1px 0 #b8b8b8;
+}
+.makeup_look{
+    display: flex;
+}
+.makeup_le{
+    width: 70%;
+    height: 100%;
+}
+.makeup_ri{
+    width: 30%;
+    height: 100%;
+}
+.makeup_look img{
+    object-fit:cover
+}
+.makeup_view{
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.makeup_p_2{
+    font-weight: 700;
+    font-family: 'Cafe24Ssurround';
+}
+.makeup_p_3{
+    border: 3px solid white;
+    border-radius: 30px;
+    margin-left: 5%;
+    font-weight: 600;
+}
+.makeup_p_3 a{
+    color: white;
+}
+.makeup_title{
+    width: 50%;
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #333;
+}
+.p_club_1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+}
+h5{
+    position: absolute;
+    top: 5%;
+    right: 0;
+    color: #663399;
+    text-shadow: -2px -2px 0 rgb(0, 255, 242), 2px -2px 0 rgb(0, 255, 242), -2px 2px 0 rgb(0, 255, 242), 2px 2px 0 rgb(0, 255, 242);
+    font-family: 'SF_HambakSnow';
+    font-weight: 900;
+
+}
+.h5_2{
+    top: 50%;
+}
+.makeup_p_4{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-weight: 800;
+}
+.makeup_title p{
+    font-weight: 500;
+    color: black;
+    text-shadow: -0.5px 0 0 white
+}
+.makeup_title p::before{
+    content: "#";
+    display: inline-block;
+}
+.fo_line{
+    width: 100%;
+    height: 10%;
+}
+.line{
+    width: 90%;
+    height: 1px;
+    background-color: #999999;
+    margin: 0 auto;
+}
+.fo_con{
+    width: 100%;
+    height: 90%;
+}
+.con_1{
+    width: 100%;
+    height: 10%;
+    color: #666666;
+    font-weight: 500;
+}
+.weight{
+    font-weight: 900;
+    color: #333;
+}
+.con_1 p{
+    width: 10%;
+    height: 100%;
+    margin: 0 0.5%;
+    box-sizing: border-box;
+    float: left;
+    display: block;
+}
+.con_1 p:last-child{
+    width: 15%;
+    margin-left: 2%;
+}
+.con_1>p:not(:last-child)::after{
+    content: "|";
+    color: #999999;
+    display: inline-block;
+    margin-left: 30%;
+}
+.con_1 a{
+    width: 100%;
+    height: 100%;
+}
+.con_1 a:hover {
+    text-decoration: underline;
+}
+.con_2{
+    width: 100%;
+    height: 75%;
+    display: flex;
+}
+.under_le{
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+.fo_logo{
+    width: 20%;
+    height: 100%;
+    padding: 0 2%;
+    box-sizing: border-box;
+}
+.fo_cont_1{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 7% 1%;
+    box-sizing: border-box;
+}
+.under_ri{
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+.content{
+    width: 20%;
+    height: 100%;
+    box-sizing: border-box;
+    font-weight: 900;
+    padding: 10% 0;
+    box-sizing: border-box;
+}
+.fo_cont_2{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10% 0;
+    box-sizing: border-box;
+}
+.fo_cont_3{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10% 0;
+    box-sizing: border-box;
+}
+.con_3{
+    width: 100%;
+    height: 15%;
+    color: #000099;
+    font-weight: 900;
+}
+
+}

@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333333;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+html,body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+}
+
+@font-face{
+    font-family:'DNFBitBitv2';
+    font-style:normal;
+    font-weight:400;
+    src:url('//cdn.df.nexon.com/img/common/font/DNFBitBitv2.otf')format('opentype')
+}
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SF_HambakSnow';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
