@@ -1,0 +1,214 @@
+@charset "utf-8";
+
+/* 노토산스 */
+
+@font-face {
+    font-family: 'NotoSansKR';
+	font-weight: 100;
+    src: url('../font/NotoSansKR-Thin.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSansKR';
+	font-weight: 200;
+    src: url('../font/NotoSansKR-ExtraLight.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSansKR';
+	font-weight: 300;
+    src: url('../font/NotoSansKR-Light.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'NotoSansKR';
+	font-weight: 400;
+	src:  url('../font/NotoSansKR-Regular.woff') format('woff');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NotoSansKR';
+	font-weight: 500;
+	src:  url('../font/NotoSansKR-Medium.woff') format('woff');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NotoSansKR';
+	font-weight: 600;
+	src:  url('../font/NotoSansKR-SemiBold.woff') format('woff');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NotoSansKR';
+	font-weight: 700;
+	src:  url('../font/NotoSansKR-Bold.woff') format('woff');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NotoSansKR';
+	font-weight: 800;
+	src:  url('../font/NotoSansKR-ExtraBold.woff') format('woff');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NotoSansKR';
+	font-weight: 900;
+	src:  url('../font/NotoSansKR-Black.woff') format('woff');
+	font-style: normal;
+}
+
+
+/* 프리텐다드 */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('../font/Pretendard-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 에스코어드림 */
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('../font/SCDream3.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* 나눔스퀘어 R */
+@font-face {
+    font-family: 'NanumSquareR';
+    font-weight: normal;
+    src: url('../font/NanumSquareR.ttf');
+}
+
+/* 나눔스퀘어 B */
+@font-face {
+    font-family: 'NanumSquareB';
+    font-weight: bold;
+    src: url('../font/NanumSquareB.ttf');
+}
+
+/* 지마켓산스 */
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('../font/GmarketSansTTFMedium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 둘기마요_고딕 */
+@font-face {
+    font-family: 'Dovemayo_gothic';
+    src: url('../font/Dovemayo_gothic.ttf');    
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Orbit */
+@font-face {
+    font-family: 'Orbit-Regular';
+    src: url('../font/Orbit-Regular.ttf');    
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 나눔명조 */
+@font-face {
+    font-family: 'NanumMyeongjo';
+    font-weight: normal;
+    src: url('../font/NanumMyeongjo.ttf');
+}
+
+/* 조선궁서 */
+@font-face {
+    font-family: 'ChosunGs';
+    src: url('../font/ChosunGs.TTF');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 나눔손글씨 */
+@font-face {
+    font-family: 'NanumPen';
+    font-weight: normal;
+    src: url('../font/NanumPen.otf');
+}
+
+/* 잉크립퀴드체 */
+@font-face {
+    font-family: 'InkLipquid';
+    src: url('../font/InkLipquid.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 둘기마요_거친 */
+@font-face {
+    font-family: 'Dovemayo_wild';
+    src:url('../font/Dovemayo_wild.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 고딕아니고 고딩 */
+@font-face {
+    font-family: 'Gothic_Goding';
+    src: url('../font/Gothic_Goding.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 밑미 */
+@font-face {
+    font-family: 'Ownglyph_meetme-Rg';
+    src: url('../font/Ownglyph_meetme-Rg.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 모노타입 */
+@font-face {
+    font-family: 'monotype';
+    font-weight: normal;
+    src: url('../font/Monotype Corsiva.ttf');
+}
+
+
+/* 캐비어 드림 */
+@font-face {
+    font-family: 'caviardreams';
+    font-weight: normal;
+    src: url('../font/CaviarDreams.ttf');
+}
+
+
+/* 헬골란트 */
+@font-face {
+    font-family: 'helgoland';
+    font-weight: normal;
+    src: url('../font/Helgoland.otf');
+}
+
+/* 컨티뉴어스 */
+@font-face {
+    font-family: 'continuous';
+    font-weight: normal;
+    src: url('../font/continuous.ttf');
+}
+
+/* 대충 내 손글씨 */
+@font-face {
+    font-family: 'Uiyeun';
+    src: url('../font/Uiyeun.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
