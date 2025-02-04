@@ -22,13 +22,20 @@ html,body{
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 400;
 }
-
-@font-face{
-    font-family:'DNFBitBitv2';
-    font-style:normal;
-    font-weight:400;
-    src:url('//cdn.df.nexon.com/img/common/font/DNFBitBitv2.otf')format('opentype')
+.wrap {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
 }
+section {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+.product_page,.sunjung_2{
+    padding-top: 50px;
+}
+
 @font-face {
     font-family: 'Cafe24Ssurround';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
@@ -38,6 +45,12 @@ html,body{
 @font-face {
     font-family: 'SF_HambakSnow';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SEBANG_Gothic_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
