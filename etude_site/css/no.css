@@ -186,6 +186,7 @@
     }
     .sunjung_2{
         background-image: url(../img/soonjung_product2.jpg);
+        background-size: cover;
     }
     .soonjung_pro{
         font-family: 'Cafe24Ssurround';
@@ -198,6 +199,7 @@
     .makeup_le{
         width: 70%;
         height: 100%;
+        filter: brightness(0.8);
     }
     .makeup_ri{
         width: 30%;

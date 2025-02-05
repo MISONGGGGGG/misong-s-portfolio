@@ -1,32 +1,28 @@
 @media all and (max-width:480px){
 
-
-    .wrap{
-        position: relative;
-    }
     section{
         position: sticky;
     }
     header{
         width: 100%;
-        height: 100px;
+        height: 50px;
         position: fixed;
         z-index: 1;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 50px;
+        padding: 0 20px;
         box-sizing: border-box;
     }
     .logo{
-        width: 130px;
-        height: 50px;
+        width: 75px;
+        height: 25px;
     }
     .main_menu, input{
         display: none;
     }
     .se_mo{
-        width: 100px;
+        width: 50px;
         height: 100%;
         display: flex;
         align-items: center;
@@ -34,12 +30,12 @@
         clear: both;
     }
     .search_box{
-        width: 40px;
-        height: 35px;
+        width: 20px;
+        height: 17.5px;
     }
     .search_icon{
-        width: 40px;
-        height: 40px;
+        width: 20px;
+        height: 20px;
         cursor: pointer;
     }
     .mo_menu_wrap {
@@ -49,8 +45,8 @@
         justify-content: space-between; 
     }
     .mo_menu_i {
-        width: 35px;
-        height: 35px;
+        width: 20px;
+        height: 20px;
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -97,6 +93,7 @@
     }
     .main_banner{
         width: 100%;
+        height: 100%;
         position: absolute;
         top: 0;
         left: 0;
@@ -174,6 +171,7 @@
     .makeup_le{
         width: 100%;
         height: 100%;
+        filter: brightness(0.8);
     }
     .makeup_ri{
        display: none;
