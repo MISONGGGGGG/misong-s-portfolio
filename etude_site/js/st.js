@@ -398,15 +398,15 @@ if(ww>=1400){
     
         $(".wrap").css({
             width:ww,
-            height:wh_t*5
+            height:wh_m*5
         })
         $("section").css({
             width:ww,
-            height:wh_t,
+            height:wh_m,
         })
         $(".sunjung_2").css({
             width:ww,
-            height:wh_t*0.5
+            height:wh_m*0.5
         })
         $(".product_section").css({
             width:"100%",
@@ -421,17 +421,17 @@ if(ww>=1400){
         })
         $("h3").css({
             width:ww,
-            height:wh_t*0.1,
+            height:wh_m*0.1,
             fontSize:ww*0.05,
             lineHeight:ww*0.05+"px"
         })
         $(".product_wrap").css({
             width:ww*2.5,
-            height:wh_t*0.4
+            height:wh_m*0.4
         })
         $(".product").css({
             width:ww*0.5,
-            height:wh_t*0.4,
+            height:wh_m*0.4,
             marginRight: ww*0.05,
             marginLeft: ww*0.05
         })
@@ -466,8 +466,8 @@ if(ww>=1400){
         })
         $(".makeup_view").css({
             width:"100%",
-            height:wh_t*0.65,
-            paddingTop: wh_t*0.4
+            height:wh_m*0.65,
+            paddingTop: wh_m*0.4
         })
         $(".makeup_p_1").css({
             fontSize:ww*0.03
@@ -484,7 +484,7 @@ if(ww>=1400){
         })
         $("footer").css({
             width:ww,
-            height:wh_t*0.3,
+            height:wh_m*0.3,
             padding:ww*0.026,
             boxSizing:"border-box",
             fontSize:ww*0.008
