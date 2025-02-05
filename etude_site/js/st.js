@@ -281,7 +281,7 @@ if(ww>=1400){
             fontSize:ww*0.007,
         })
     }
-    else if(ww<1025){
+    else if(ww<1025 && ww>=481 ){
         ww=$(window).width();
         wh_t=ww*1.4;
     
@@ -315,13 +315,14 @@ if(ww>=1400){
             lineHeight:ww*0.05+"px"
         })
         $(".product_wrap").css({
-            width:ww,
+            width:ww*2.5,
             height:wh_t*0.4
         })
         $(".product").css({
-            width:ww*2.5,
+            width:ww*0.5,
             height:wh_t*0.4,
-            marginRight: ww*0.1
+            marginRight: ww*0.05,
+            marginLeft: ww*0.05
         })
         $(".product_img").css({
             width:ww*0.4,
@@ -390,8 +391,117 @@ if(ww>=1400){
         $(".con_3").css({
             fontSize:ww*0.02,
         })
-                
+    }
+    else{
+        ww=$(window).width();
+        wh_m=ww*1.8;
     
+        $(".wrap").css({
+            width:ww,
+            height:wh_t*5
+        })
+        $("section").css({
+            width:ww,
+            height:wh_t,
+        })
+        $(".sunjung_2").css({
+            width:ww,
+            height:wh_t*0.5
+        })
+        $(".product_section").css({
+            width:"100%",
+            height:"50%"
+        })
+        $("h2").css({
+            width:"100%",
+            height:"15%",
+            fontSize:ww*0.078,
+            position:"absolute",
+            bottom:ww*0.1,
+        })
+        $("h3").css({
+            width:ww,
+            height:wh_t*0.1,
+            fontSize:ww*0.05,
+            lineHeight:ww*0.05+"px"
+        })
+        $(".product_wrap").css({
+            width:ww*2.5,
+            height:wh_t*0.4
+        })
+        $(".product").css({
+            width:ww*0.5,
+            height:wh_t*0.4,
+            marginRight: ww*0.05,
+            marginLeft: ww*0.05
+        })
+        $(".product_img").css({
+            width:ww*0.4,
+            height:ww*0.4,
+        })
+        $(".soonjung_ri").css({
+            width:"100%",
+            height:"100%"
+        })
+        $(".soon_title").css({
+            width:"100%",
+            height:"20%",
+        })
+        $(".soon_title p").css({
+            display:"block",
+            width:"50%",
+            height:"20%",
+            fontSize:ww*0.04,
+            marginLeft: ww*0.55,
+        })
+        $(".sunjung_2 h3").css({
+            fontSize:ww*0.055,
+        })
+        $("h4").css({
+            width:"50%",
+            height:"80%",
+            fontSize:ww*0.1,
+            marginLeft: ww*0.20,
+            marginBottom: -ww*0.1
+        })
+        $(".makeup_view").css({
+            width:"100%",
+            height:wh_t*0.65,
+            paddingTop: wh_t*0.4
+        })
+        $(".makeup_p_1").css({
+            fontSize:ww*0.03
+        })
+        $(".makeup_p_2").css({
+            fontSize:ww*0.08
+        })
+        $(".makeup_p_3").css({
+            width:ww*0.25,
+            height:ww*0.08,
+            fontSize:ww*0.04,
+            textAlign:"center",
+            lineHeight:ww*0.075+"px"
+        })
+        $("footer").css({
+            width:ww,
+            height:wh_t*0.3,
+            padding:ww*0.026,
+            boxSizing:"border-box",
+            fontSize:ww*0.008
+        })
+        $(".con_1>p").css({
+            width:ww*0.3,
+            height:ww*0.08,
+            fontSize:ww*0.02,
+        })
+        $(".fo_cont_1>li").css({
+            width:ww*0.45,
+            height:ww*0.02,
+            fontSize:ww*0.02,
+        })
+        $(".con_3").css({
+            fontSize:ww*0.02,
+        })
     }
 }
 
@@ -442,14 +552,15 @@ $(".mo_menu_i").click(function(){
     slide(true);
     setInterval(slide, 5000);
 
+
     let ww = $(window).width();
-    let currentIndex = 0; 
-    let productCount = $(".product").length; 
-    let productWidth = ww * 0.5;
+    let currentIndex = 0;
+    let productCount = 4; // 슬라이드 횟수 4번 + 5번째는 처음으로 리셋
+    let productWidth = ww * 0.5; // 개별 product의 너비
 
     function slideProducts() {
         if (ww < 1025) {
-            let moveX = productWidth * currentIndex * -1; 
+            let moveX = productWidth * currentIndex * -1;
 
             $(".product_wrap").css({
                 transform: `translateX(${moveX}px)`,
@@ -458,12 +569,12 @@ $(".mo_menu_i").click(function(){
 
             currentIndex++;
 
-      
-            if (currentIndex >= productCount) {
+            // 🚀 **5번째 슬라이드에서 처음으로 돌아감**
+            if (currentIndex === productCount) {
                 setTimeout(() => {
                     $(".product_wrap").css({
                         transform: "translateX(0px)",
-                        transition: "none"
+                        transition: "none" // 부드럽게 처음으로 이동
                     });
                     currentIndex = 0;
                 }, 900);
@@ -472,6 +583,7 @@ $(".mo_menu_i").click(function(){
     }
 
     if (ww < 1025) {
+        slideProducts(true);
         setInterval(slideProducts, 3000);
     }
 
@@ -483,6 +595,7 @@ $(".mo_menu_i").click(function(){
         }
     });
 
+    
 
 
 })
